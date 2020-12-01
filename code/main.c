@@ -1,10 +1,11 @@
 
 #include "jeu.h"
 
+
+
 int main()
 {
-    int joueurs = 1;
-
+	int     joueurs = 1;
 
     while(ChekWin() != 1){
 	system("clear");
@@ -16,11 +17,13 @@ int main()
     changePlayer();
 	if (joueurs == 1)
 	{
+		green();
 		printf("le %der joueur a gagné.\n", joueurs);
 	}else{
 		printf("le %de joueur a gagné.\n", joueurs);
+		Resett();
 	}
 	
+	printf("\n");
 	
-    
 }
