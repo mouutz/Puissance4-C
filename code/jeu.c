@@ -7,7 +7,7 @@ void green() {printf("\033[1;32m");}
 void Resett() {printf("\033[0m");}
 
 
-char     board[7][7]= {' ',' ',' ',' ',' ',' ',' '};
+char     board[7][7]= {0};
 int     joueurs = 1;
 int     usrInput;
 
@@ -24,7 +24,7 @@ void PrintBoard(void)
 	    for(int j = 0; j < 7; j++)
 		{
 			printf("|");
-			printf("%c|", board[i][j]);
+			printf("%d|", board[i][j]);
 	    }
 	    printf("\n");
 	}
